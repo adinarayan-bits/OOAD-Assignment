@@ -1,0 +1,60 @@
+Short Description:
+
+* Write a program that will allow a player to play a number puzzle. There are eight numbers 1 through 8 arranged random on a board with 9 cells (one is vacant). 
+* User can move only to an adjacent empty cell, only one number at a time. 
+* The objective is to make the player to arrange the numbers in ascending order. 
+* Once the player is done, report the number of moves.
+* Implement a simple command-line application where you present the state of the cells and ask the user to input the moves
+
+Goal 
+
+The 8 Puzzle is is to play  on a 3-by-3 grid with 8 square blocks labeled 1 through 8 and a blank square.
+The goal or objective is to rearrange the blocks so that they are in ascending order.
+
+User stories:
+
+As a programmer I want to create a board with 9 cells that  allow the  player to play a number puzzle
+As a programmer I want to ensure one cell is vacant so that the player can move the numbers to continue the puzzle
+As a programmer I want to ensure that player is allowed to move cells to adjecent side with only one number at a time and ensure movement is not to the diagnals
+As a programmer I want to ensure that the board is fill with 8 cells out of 9 so that the player can make moves  
+As a programmer I want to ensure the player to arrange numbers in ascending order in the puzzle so that the player can complete the puzzle
+As a programmer I want to report the number of moves that the player has attempted to complete the puzzle in ascending order
+
+
+
+Acceptance Criteria:
+
+1. Given the player arranged all seven numbers in ascending order 
+   when the player click on eighth number 
+   Then the Player should get a pop up saying "Congratualtions You won'
+
+2. Given the Player click on any numbers from 1-8 
+   When the diagnal cell is empty 
+   Then the Player move not allowed
+
+3. Given the 8 number puzzle 
+   When the Player is moving cells
+   Then one of the cell should be vacant
+
+4. Given the 8 number puzzle 
+   When 9 cells are present
+   Then Player can continue playing the puzzle
+
+5  Given the  8 number  Puzzle 
+   When the player complete the puzzle
+   Then player should get a report on number of moves that player attempted
+
+
+Test cases
+
+
+1. Execute the  Puzzle to validate all 9 cells are present
+   Expected result - Vacant cell should be created as a ninth cell in 1-8 puzzle board
+2. Execute the  Puzzle and  validate the presence of  blank cell 
+   Expected result - Puzzle display with 9 cells including 1 blank cell 
+3. Move the numbers in Puzzle  to ensure each number is moved adjacently and not to diagnally
+4.Test all the 8 numbers are randomly arranges in Puzzle board
+5.Test the puzzle result should be in ascending order
+6.Test the puzzle after successfully completion of puzzle,player should get popup display as 'Congratulation you won'
+7.Test  the number of moves display  once the puzzle game is successfully completed by player
+
